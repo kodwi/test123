@@ -1,0 +1,4 @@
+<div fxLayout="column">
+  <app-section-list-item *ngFor="let section of sections" [routerLink]="['/section', section.id]"
+                         [section]="section"></app-section-list-item>
+</div>

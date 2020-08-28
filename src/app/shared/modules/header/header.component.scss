@@ -1,0 +1,13 @@
+:host {
+  position: sticky;
+  width: 100%;
+
+  top: 0;
+
+  background-color: #cccccc;
+  color: #6c6c6c;
+
+  & > div {
+    padding: 1rem;
+  }
+}

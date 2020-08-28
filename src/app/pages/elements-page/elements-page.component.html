@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="1rem">
+  <div *ngIf="currSection" class="go-back" routerLink="/">< {{currSection.name}}</div>
+  <div fxLayout="row wrap">
+    <app-element-list-item (remove)="removeElement($event)" *ngFor="let element of elements"
+                           [element]="element"></app-element-list-item>
+  </div>
+</div>
